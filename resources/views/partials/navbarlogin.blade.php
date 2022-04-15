@@ -6,12 +6,6 @@
       </a>
       <div class="d-flex flex-row-reverse">
         <div class="p-2">
-          <a href="/" class="btn btn-secondary" role="button">Daftar</a>
-        </div>
-        <div class="p-2">
-          <a href="/login" class="btn btn-primary" role="button">Login</a>
-        </div>
-        <div class="p-2">
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>

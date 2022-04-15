@@ -15,24 +15,11 @@
             </table>
         </div>
         <div class="container-category-content" style="padding: 20px;background-color:#EED7CE">
-            <table style="width:50%">
-                <tr>
-                    <td align="right">
-                        row 1 col 1
-                    </td>
-                    <td align="left">
-                        row 1 col 2
-                    </td>
-                </tr>
-                <tr>
-                    <td align="right">
-                        row 2 col 1
-                    </td>
-                    <td align="left">
-                        row 2 col 2
-                    </td>
-                </tr>
-            </table>
+            <ul class="list-inline-block">
+                <li class="list-inline-item" style="align:center;width: 150px;height:150px; background-color: bisque">Lorem, ipsum.</li>
+                <li class="list-inline-item" style="width: 150px;height:150px; background-color: bisque">Phasellus iaculis</li>
+                <li class="list-inline-item" style="width: 150px;height:150px; background-color: bisque">Nulla volutpat</li>
+            </ul>   
         </div>
     </div>
 @show
