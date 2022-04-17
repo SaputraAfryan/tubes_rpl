@@ -16,6 +16,5 @@
       <div class="container-fluid mt-4">
         @yield('container')
       </div>
-
   </body>
 </html>
