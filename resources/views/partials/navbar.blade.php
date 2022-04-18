@@ -6,10 +6,10 @@
       </a>
       <div class="d-flex flex-row-reverse">
         <div class="p-2">
-          <a href="/" class="btn btn-secondary" role="button">Daftar</a>
+          <a href="/signup" class="btn btn-secondary" role="button">Sign Up</a>
         </div>
         <div class="p-2">
-          <a href="/login" class="btn btn-primary" role="button">Login</a>
+          <a href="/signin" class="btn btn-primary" role="button">Sign In</a>
         </div>
         <div class="p-2">
             <form class="d-flex">

@@ -7,7 +7,7 @@
             <tr>
                 <td align="left">
                     <div style="color: black">
-                        <h2>Registration</h2>
+                        <h2>Sign Up</h2>
                     </div>
                 </td>
             </tr>
@@ -51,8 +51,7 @@
                         </div>
                         <div class="btn-group mt-4">
                             <a href="/" class="btn btn-outline-succes">Back</a>
-                            <a href="/login" class="btn btn-primary">Sign In</a>
-                            <a href="/registration" class="btn btn-outline-primary">Sign up</a>
+                            <a href="/signin" class="btn btn-primary">Sign In</a>
                         </div>
                       </form>     
                 </td>

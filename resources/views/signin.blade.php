@@ -7,7 +7,7 @@
             <tr>
                 <td align="left">
                     <div style="color: black">
-                        <h2>Login</h2>
+                        <h2>Sign In</h2>
                     </div>
                 </td>
             </tr>
@@ -28,7 +28,7 @@
                     <div class="btn-group">
                         <a href="/" class="btn btn-outline-succes">Back</a>
                         <a href="/" class="btn btn-primary">Sign In</a>
-                        <a href="/registration" class="btn btn-outline-primary">Sign up</a>
+                        <a href="/signup" class="btn btn-outline-primary">Sign up</a>
                     </div>
                 </td>
             </tr>
