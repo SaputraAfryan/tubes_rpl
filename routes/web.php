@@ -18,11 +18,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//auth route for both
-
+//auth route for all role
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/dashboard/profile', [DashboardController::class, 'profile'])->name('dashboard.profile');
 });
+
+// //auth route for owner
+// Route::group(['middleware' => ['auth', 'role:owner']], function () {
+//     Route::get('/dashboard/profile', [DashboardController::class, 'profile'])->name('dashboard.profile');
+// });
+
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');

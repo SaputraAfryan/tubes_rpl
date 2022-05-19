@@ -18,12 +18,17 @@ class DashboardController extends Controller
         //
 
         if (Auth::user()->hasRole('admin')) {
-            return view('dashboard.admin');
+            return view('dashboards.admin');
         } elseif (Auth::user()->hasRole('owner')) {
-            return view('dashboard.owner');
+            return view('dashboards.owner');
         } elseif (Auth::user()->hasRole('user')) {
-            return view('dashboard.user');
+            return view('dashboards.user');
         }
+    }
+
+    public function profile()
+    {
+        return view('profiles.profile');
     }
 
     /**

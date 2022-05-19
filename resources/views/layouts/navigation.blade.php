@@ -10,6 +10,13 @@
                     </a>
                 </div>
 
+                <!-- Brand -->
+                <div class="shrink-0 flex items-center">
+                    <a href="{{ route('dashboard') }}">
+                        SkutKost!
+                    </a>
+                </div>
+
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
@@ -34,6 +41,12 @@
                     </x-slot>
 
                     <x-slot name="content">
+
+                        <!-- Show My Profile -->
+                        <x-dropdown-link :href="route('dashboard.profile')">
+                                {{ __('My Profile') }}
+                        </x-dropdown-link>
+
                         <!-- Authentication -->
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
@@ -76,6 +89,12 @@
             </div>
 
             <div class="mt-3 space-y-1">
+
+                <!-- Show My Profile -->
+                <x-responsive-nav-link :href="route('dashboard.profile')">
+                        {{ __('My Profile') }}
+                </x-responsive-nav-link>
+
                 <!-- Authentication -->
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
