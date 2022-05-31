@@ -5,12 +5,22 @@
         SkutKost!
       </a>
       <div class="d-flex flex-row-reverse">
-        <div class="p-2">
-          <a href="/signup" class="btn btn-secondary" role="button">Sign Up</a>
-        </div>
-        <div class="p-2">
-          <a href="/signin" class="btn btn-primary" role="button">Sign In</a>
-        </div>
+        @if (Route::has('login'))
+          @auth
+            <div class="p-2">
+              <a href="{{ url('/dashboard') }}" class="btn btn-primary" role="button">Dashboard</a>
+            </div>
+            @else
+              @if (Route::has('register'))
+                <div class="p-2">
+                  <a href="{{ route('register') }}" class="btn btn-secondary" role="button">Register</a>
+                </div>
+              @endif
+              <div class="p-2">
+                <a href="{{ route('login') }}" class="btn btn-primary" role="button">Login</a>
+              </div>
+          @endauth
+        @endif
         <div class="p-2">
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
