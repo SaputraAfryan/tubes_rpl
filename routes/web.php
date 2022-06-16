@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BookingController;
 use App\Http\Controllers\DashboardController;
 
 /*
@@ -24,10 +25,10 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/dashboard/profile', [DashboardController::class, 'profile'])->name('dashboard.profile');
 });
 
-// //auth route for owner
-// Route::group(['middleware' => ['auth', 'role:owner']], function () {
-//     Route::get('/dashboard/profile', [DashboardController::class, 'profile'])->name('dashboard.profile');
-// });
+//auth route for user
+Route::group(['middleware' => ['auth', 'role:user']], function () {
+    Route::get('/booking', [BookingController::class, 'book'])->name('booking');
+});
 
 
 // Route::get('/dashboard', function () {

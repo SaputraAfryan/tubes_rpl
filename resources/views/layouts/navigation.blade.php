@@ -23,6 +23,15 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+                
+                @if (Auth::user()->hasRole('user'))
+                    <!-- Navigation Links -->
+                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                        <x-nav-link :href="route('booking')" :active="request()->routeIs('booking')">
+                            {{ __('Booking') }}
+                        </x-nav-link>
+                    </div>  
+                @endif
             </div>
 
             <!-- Settings Dropdown -->
